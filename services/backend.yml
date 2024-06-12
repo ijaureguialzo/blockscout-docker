@@ -12,6 +12,3 @@ services:
       -  ../envs/common-blockscout.env
     volumes:
       - logs:/app/logs/
-
-volumes:
-  logs:

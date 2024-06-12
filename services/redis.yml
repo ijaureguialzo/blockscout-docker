@@ -5,6 +5,3 @@ services:
     command: redis-server
     volumes:
       - redis-data:/data
-
-volumes:
-  redis-data:

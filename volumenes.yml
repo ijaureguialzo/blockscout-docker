@@ -1,0 +1,5 @@
+volumes:
+  stats-db-data:
+  logs:
+  blockscout-db-data:
+  redis-data:
