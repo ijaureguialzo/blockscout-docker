@@ -26,12 +26,12 @@ _start-command:
 start: _start-command _urls
 
 stop:
-	@docker compose stop
+	@docker compose -f hardhat-network.yml stop
 
 restart: stop start
 
 logs:
-	@docker compose logs
+	@docker compose -f hardhat-network.yml logs
 
 clean:
-	@docker compose down -v --remove-orphans
+	@docker compose -f hardhat-network.yml down -v --remove-orphans
