@@ -5,6 +5,7 @@ help: _header
 	@echo Opciones:
 	@echo ----------------------
 	@echo start / stop / restart
+	@echo update
 	@echo logs
 	@echo clean
 	@echo ----------------------
@@ -29,6 +30,9 @@ stop:
 	@docker compose -f hardhat-network.yml stop
 
 restart: stop start
+
+update:
+	@docker compose -f hardhat-network.yml pull
 
 logs:
 	@docker compose -f hardhat-network.yml logs
