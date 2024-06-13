@@ -90,3 +90,6 @@ services:
     extends:
       file: ./services/nginx.yml
       service: proxy
+
+include:
+  - volumenes.yml
