@@ -26,9 +26,9 @@ _header:
 
 _urls: _header
 	${info }
-	@echo -----------------------------
-	@echo [Blockscout] http://localhost
-	@echo -----------------------------
+	@echo ----------------------------------
+	@echo [Blockscout] http://localhost:9000
+	@echo ----------------------------------
 
 _start-command:
 	@docker compose -f $(NETWORK).yml up -d
